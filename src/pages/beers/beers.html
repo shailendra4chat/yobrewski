@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-title><img src="./assets/yo-brewski.png" width="80" /></ion-title>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let beer of beers"(click)="getBeerPage(beer.id)">
+      <img [src]="beer.image_url" />
+      <ion-card-content>
+        <ion-card-title>
+          <a > {{ beer.name }}</a>
+          </ion-card-title>
+        <p>
+          {{ beer.description }}
+        </p>
+      </ion-card-content>
+    </ion-card>
+</ion-content>

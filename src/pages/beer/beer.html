@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-title><img src="./assets/yo-brewski.png" width="80" /></ion-title>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngIf="beerObj">
+      <img [src]="beerObj.image_url" />
+      <ion-card-content>
+        <ion-card-title>
+          {{ beerObj.name }}
+        </ion-card-title>
+        <p><strong>First brewed in</strong> {{ beerObj.first_brewed }}</p>
+        <p padding-top>
+          <strong>Tagline</strong> {{ beerObj.tagline }}
+        </p>
+        <p padding-top>
+          {{ beerObj.description }}
+        </p>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
