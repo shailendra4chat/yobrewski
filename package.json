@@ -1,6 +1,6 @@
 {
   "name": "yobrewski",
-  "author": "shailendra singh",
+  "author": "Shailendra Singh",
   "homepage": "https://github.com/shailendra4chat",
   "private": true,
   "scripts": {
@@ -40,5 +40,5 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "yoBrewski: An Ionic 2 Project"
+  "description": "yoBrewski: An Ionic 2 project"
 }
